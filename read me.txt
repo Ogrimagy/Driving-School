@@ -1,3 +1,5 @@
+the index file is page_acceuil.html
+
 Rename the database "test" for example in 
 
 1- db_connexion.php ... line 4
