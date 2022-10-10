@@ -1,0 +1,10 @@
+Rename the database "test" for example in 
+
+1- db_connexion.php ... line 4
+2- creation_bdd.php ... line 4
+
+do not modify this path
+
+http://localhost/Projet-AutoEcole/creation_bdd.php
+http://localhost/Projet-AutoEcole/creation_table.php
+http://localhost/Projet-AutoEcole/insertion.php
