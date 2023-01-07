@@ -1,0 +1,491 @@
+.topnav {
+    background-color: #333;
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.leftNav {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    z-index: 10001;
+}
+.notif{
+    width: 100%;
+    text-align: left;
+}
+
+.leftNav a {
+    text-align: right;
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+.imgNav {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 80px;
+    z-index: 10001;
+}
+
+.imgNav a {
+    text-align: right;
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 3px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+.imgNav a img{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4CAF50;
+    width: 36px;
+    height: 36px;
+}
+
+/* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar */
+.topnav a {
+    text-align: right;
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    font-variant: small-caps;
+    text-decoration: none;
+    transition: 0.7 ease;
+}
+
+.topnav button {
+    background-color: rgba(0,0,0,0);
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    font-variant: small-caps;
+    text-decoration: none;
+    transition: 0.7 ease;
+    border:none;
+}
+
+.right-menu {
+    display:inline;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #75bd78;
+    color: white;
+    transition: 0.5s ease;
+}
+.buttonLink:hover {
+    background-color: #d15454 !important;
+    cursor: pointer;
+}
+
+.deco:hover {
+    cursor: pointer;
+}
+.acc:hover{
+    cursor: pointer;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+/********************************************* Side Bar **********************************************/
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.8s ease-out;
+}
+
+/* Style sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #c9c9c9;
+    display: block;
+}
+
+.sidebar a:last-child {
+    margin-bottom: 200px;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+    color: #f1f1f1;
+    transform: scale(1.05);
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+.sidebar .closebtn {
+    margin-top: -30px;
+    font-size: 36px;
+    margin-left: 84%;
+}
+
+.sidebar .las {
+    font-size: 27px;
+}
+
+.loader {
+    border: 16px solid #333333; 
+    border-top: 16px solid #4CAF50; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    margin-top: 15%;
+}
+/******************************************* Fin Side Bar ********************************************/
+/******************************************* Notification ********************************************/
+.notifComplete {
+    border: solid;
+    border-width: 2px;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #4CAF50;
+    transition: all 0.25s ease-out;
+    margin-bottom: 5px;
+}
+
+.notifComplete:hover {
+    transform: scale(1.005);
+    transition: all 0.2s ease-out;
+    
+}
+
+.dateNotif {
+    float: right;
+    font-size: 12px;
+}
+
+.nomNotif {
+    text-align: left;
+}
+
+.fermerNotif {
+    float: right;
+    margin-right: 10px;
+    transition: all 0.15s ease-out;
+    font-size: 1.3vw;
+}
+
+.fermerNotif:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    /*color: #D15454;*/
+    transition: all 0.15s ease-out;
+}
+
+
+.messageNotif {
+    text-align: left;
+}
+
+#nbNotif {
+    background-color: #d63031;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    top: 2.4px;
+    margin-left: -4px;
+    height: 1rem;
+    width:  1rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1.5px;
+    font-size: 1rem;
+}
+
+#nbNotif:empty {
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+/***************************************** Fin Notification ******************************************/
+/********************************************* Footer ************************************************/
+#footer {
+    height: 0px; /* the footer's total height */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-content {
+    background-color: #333;
+    border: 1px solid;
+    padding: 8px;
+    border-color: #333;
+}
+
+#footer-content a{
+    font-variant:small-caps;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    transition: background-color 1s ease;
+}
+
+#footer-content a:hover:not(.active) {  
+    background-color: #75bd78;
+    transition: background-color 0.5s ease;
+}
+
+.foooter{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:65px;
+    background: 333;
+}
+/******************************************* FIN Footer ***********************************************/
+
+/* Device = Desktops, Screen = 1281px to higher resolution desktops*/
+@media (min-width: 1367px) {
+
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .topnav a, .topnav button {
+        font-size: 1.1vw;
+    }
+    #footer-content {
+        padding: 5.5px;
+    }
+    #footer-content a{
+        font-size: 1.1vw;
+        padding: 10px 5px;
+    }
+    .foooter{
+        height: 50px;
+    }
+    .leftNav{
+        width: 260px;
+    }
+    .leftNav a {
+        font-size: 1.2vw;
+    }
+    .imgNav a img{
+        width: 30px;
+        height: 30px;
+    }
+    .sidebar {
+        padding-top: 60px;
+    }
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        font-size: 1.3vw;
+    }
+    .sidebar .las {
+        font-size: 23px;
+    }
+    .second{
+        height: 65px;
+    }
+    .loader {
+        border: 13px solid #333333; 
+        border-top: 13px solid #4CAF50; 
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .topnav a, #footer-content a, .topnav button {
+        font-size: 1.1vw;
+    }
+    .leftNav{
+        width: 260px;
+    }
+    .leftNav a {
+        font-size: 1.2vw;
+    }
+    .imgNav a img{
+        width: 30px;
+        height: 30px;
+    }
+    .sidebar {
+        width: 260px;
+        padding-top: 60px;
+    }
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        font-size: 1.3vw;
+    }
+    .sidebar .las {
+        font-size: 20px;
+    }
+    .second{
+        height: 65px;
+    }
+    .loader {
+        border: 13px solid #333333; 
+        border-top: 13px solid #4CAF50; 
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 481px to 767px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .topnav a, #footer-content a, .topnav button {
+        font-size: 1.2vw;
+    }
+    .leftNav{
+        width: 260px;
+    }
+    .leftNav a {
+        font-size: 1.2vw;
+    }
+    .imgNav a img{
+        width: 30px;
+        height: 30px;
+    }
+    .sidebar {
+        width: 260px;
+        padding-top: 60px;
+    }
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        font-size: 1.3vw;
+    }
+    .sidebar .las {
+        font-size: 20px;
+    }
+    .second{
+        height: 65px;
+    }
+    .loader {
+        border: 13px solid #333333; 
+        border-top: 13px solid #4CAF50; 
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .topnav a, #footer-content a, .topnav button {
+        font-size: 1.1vw;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .topnav a, #footer-content a, .topnav button {
+        font-size: 2.6vw;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .topnav a, .topnav button {
+        font-size: 3.3vw;
+    }
+    #footer-content a{
+        font-size: 2.8vw;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 767px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 767px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

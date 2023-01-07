@@ -1,0 +1,356 @@
+html,body
+{
+	margin: 0px;
+	padding: 0px;
+    font-size: 20px;
+	font-family: GeomanistHinted,sans-serif;
+	background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the container/contact section */
+.container {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ),url("../img/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2e2e2e;
+    color:#afafaf;
+}
+
+
+.toplevel {
+    padding-top: 3%;
+    padding-bottom: 0px;
+}
+
+.title{
+    font-family: Roboto, Times, serif;
+    font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.xlarge-font {
+    font-size: 2.2vw;
+}
+
+.row {
+    display: table;
+    width: 60%;
+    table-layout: fixed;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 1%;
+    padding-bottom: 5%;
+    display: table-cell;
+}
+
+.first_half{
+    padding: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #191919;
+    text-align: center;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 10px 10px #191919;
+}
+
+.choix{
+	font-size: 1.5vw;
+	color: white;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+}
+
+.small {
+    font-size: 1.2vw;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    color: #75bd78;
+}
+
+.small2 {
+    font-size: 1vw;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+.second_half{
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    background-color: #4CAF50;
+    border-bottom-left-radius: 10px;
+    box-shadow: 10px 10px 10px #191919;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+}
+
+.line{
+	font-size: 0.9vw;
+	color: white;
+}
+
+.button {
+	margin-top: 15px;
+    border: none;
+    color: white;
+    padding: 9px 22px;
+    font-size: 1vw;
+    cursor: pointer;
+    background-color: #191919;
+    outline: none;
+    border: 1px solid #191919;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.button:hover {
+    border: 1px solid #262626;
+    background-color: #363636;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+/* Device = Desktops, Screen = 1281px to higher resolution desktops*/
+@media (min-width: 1367px) {
+
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+	.xlarge-font {
+    	font-size: 2vw;
+	}
+	.first_half{
+		padding: 25px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.choix{
+		font-size: 1.3vw;
+	}
+	.small{
+		font-size: 1.1vw;
+	}
+	.small2{
+		font-size: 0.9vw;
+	}
+	.second_half{
+		padding: 25px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	img{
+		width: 80px;
+		height: 80px;
+	}
+	.line{
+		font-size: 0.8vw;
+	}
+	.button{
+		font-size: 0.9vw;
+		padding: 8px 20px;
+	}
+	.row{
+		width: 55%;
+	}
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.xlarge-font {
+    	font-size: 2vw;
+	}
+	.first_half{
+		padding: 27px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.choix{
+		font-size: 1.3vw;
+	}
+	.small{
+		font-size: 1.1vw;
+	}
+	.small2{
+		font-size: 0.9vw;
+	}
+	.second_half{
+		padding: 27px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	img{
+		width: 78px;
+		height: 78px;
+	}
+	.line{
+		font-size: 0.8vw;
+	}
+	.button{
+		font-size: 0.9vw;
+		padding: 8px 20px;
+	}
+	.row{
+		width: 55%;
+	}
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.toplevel{
+		padding-top: 4%;
+	}
+	.xlarge-font {
+    	font-size: 1.8vw;
+    	padding: 2%;
+	}
+	.first_half{
+		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.choix{
+		font-size: 1.1vw;
+	}
+	.small{
+		font-size: 1vw;
+	}
+	.small2{
+		font-size: 0.9vw;
+	}
+	.second_half{
+		padding: 20px;
+		padding-top: 8px;
+		padding-bottom: 10px;
+	}
+	img{
+		width: 70px;
+		height: 70px;
+	}
+	.line{
+		font-size: 0.7vw;
+	}
+	.button{
+		font-size: 0.8vw;
+		padding: 7px 16px;
+	}
+	.row{
+		width: 52%;
+	}
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 481px to 767px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+	.toplevel{
+		padding-top: 7%;
+	}
+	.xlarge-font {
+    	font-size: 3vw;
+    	padding: 2%;
+	}
+	.first_half{
+		padding: 25px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.choix{
+		font-size: 2.3vw;
+	}
+	.small{
+		font-size: 1.6vw;
+	}
+	.small2{
+		font-size: 1.5vw;
+	}
+	.second_half{
+		padding: 25px;
+		padding-top: 8px;
+		padding-bottom: 10px;
+	}
+	img{
+		width: 80px;
+		height: 80px;
+	}
+	.line{
+		font-size: 1.2vw;
+	}
+	.button{
+		font-size: 1.3vw;
+		padding: 7px 16px;
+	}
+	.row{
+		width: 45%;
+	}
+	.column{
+		width: 100%;
+	}
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+	.toplevel{
+		padding-top: 10%;
+	}
+	.xlarge-font {
+    	font-size: 3.8vw;
+    	padding: 5%;
+    	padding-right: 10%;
+    	padding-left: 10%;
+	}
+	.first_half{
+		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.choix{
+		font-size: 3.3vw;
+	}
+	.small{
+		font-size: 2.3vw;
+	}
+	.small{
+		font-size: 2.2vw;
+	}
+	.second_half{
+		padding: 20px;
+		padding-top: 6px;
+		padding-bottom: 10px;
+	}
+	img{
+		width: 85px;
+		height: 85px;
+	}
+	.line{
+		font-size: 1.7vw;
+		font-weight: bolder;
+	}
+	.button{
+		font-size: 1.9vw;
+		padding: 7px 16px;
+	}
+	.row{
+		width: 63%;
+	}
+	.column{
+		width: 100%;
+	}
+}

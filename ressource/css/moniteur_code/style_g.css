@@ -1,0 +1,261 @@
+html{
+  position:relative; 
+  min-height: 100%;
+}
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+  margin:0;
+  padding:0; 
+}
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:65px;
+    background:#333;
+}
+
+
+
+body {
+  font-size: 20px;
+  margin:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+  linear-gradient(155deg, black 23px, transparent 23px),
+  linear-gradient(335deg, black 23px, transparent 23px),
+  linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}   
+
+
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.8s ease-out;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c9c9c9;
+  display: block;
+}
+
+.sidebar a:last-child {
+  margin-bottom: 200px;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+  transform: scale(1.05);
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+.la {
+    font-size: 27px;
+}
+.la-chevron-circle-down{
+   color: #4CAF50;
+}
+.la-chevron-circle-up{
+     color: #F44336;
+}
+.la-clipboard {
+    color: #4CAF50;
+}
+.la-list-ul{
+    color: #F44336;
+}
+.la-check-square {
+    color: #2582e6;
+}
+.la-edit {
+    color: #f7bd1e;
+}
+.la-calendar-times-o {
+    color: #99ccff;
+}
+
+.la-angle-double-left {
+    transition: 0.4s ease-out;
+}
+
+.sidebar .closebtn {
+    margin-top: -30px;
+    font-size: 36px;
+    margin-left: 84%;
+}
+
+#type_employe {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-out;
+    text-indent: 15px;
+}
+
+
+
+
+
+#resultatexaman,#listecandidat,#candidatpret,#test,#modifier,#absence{
+      display: none;
+      transition: all 0.8s ease-out;
+    }
+
+  #notification{
+    display: none;
+  }
+
+.loader {
+  border: 16px solid #333333; 
+  border-top: 16px solid #4CAF50; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  margin-top: 15%;
+}
+
+
+
+
+/*-------------------------------------pourpreparer et modifier test --------------------------------------------------*/
+
+
+#a11,#a12,#a21,#a22,#a31,#a32,#a41,#a42,#a51,#a52,#a61,#a62,#a71,#a72,#a81,#a82,#a91,#a92,#a101,#a102{
+   visibility: hidden;
+}
+#nqst1,#nqst2,#nqst3,#nqst4,#nqst5,#nqst6,#nqst7,#nqst8,#nqst9,#nqst10{
+  display: none;
+}
+#a1,#a2{
+    transition:all 0.8s ease-out;
+ visibility: hidden;
+  
+}
+
+.NQST{
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 230px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.SQST{
+   border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 130px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.butimg{
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 70%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.VQST{
+   border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 100%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.VMQST{
+   border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 50%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+input[type="number"]{
+    padding: 7px;
+    opacity: 1;
+    font-weight: bold;
+    color:white;
+}
+.espace_1{
+    height: 10px;
+}
+.espace_2{
+    height:20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+ 
+  .sidebar a {font-size: 18px;}
+}

@@ -1,0 +1,128 @@
+#listecandidat,#candidatpret{
+    font-family:Calibri;
+    width:70%;
+    background-color: #2e2e2e;
+    color:#afafaf;
+    font-size: 20px;
+    margin: 100px calc(11% + 200px) auto calc(11% + 200px);
+    margin-bottom: 200px;
+    transition: all 0.8s ease-out;
+    border-style: solid;
+    border-color: dimgray;
+    border-radius: 5px;
+    padding: 15px !important;
+}
+
+#listecandidat,h1{
+    text-align: center;
+    color: white;
+}
+#candidatpret,h1{
+     text-align: center;
+    color: white;
+}
+#resultatexaman,#listecandidat,#candidatpret,#test,#modifier,#absence{
+    display: none;
+    transition: all 0.8s ease-out;
+}
+/*-------------------------------------pourpreparer et modifier test --------------------------------------------------*/
+#a11,#a12,#a21,#a22,#a31,#a32,#a41,#a42,#a51,#a52,#a61,#a62,#a71,#a72,#a81,#a82,#a91,#a92,#a101,#a102{
+    visibility: hidden;
+}
+#nqst1,#nqst2,#nqst3,#nqst4,#nqst5,#nqst6,#nqst7,#nqst8,#nqst9,#nqst10{
+    display: none;
+}
+#a1,#a2{
+    transition:all 0.8s ease-out;
+    visibility: hidden;
+  
+}
+
+.NQST{
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 230px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.SQST{
+    border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 130px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.butimg{
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 70%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.VQST{
+   border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 100%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.VMQST{
+   border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 50%;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+input[type="number"]{
+    padding: 7px;
+    opacity: 1;
+    font-weight: bold;
+    color:white;
+}
+
+.espace_1{
+    height: 10px;
+}
+
+.espace_2{
+    height:20px;
+}

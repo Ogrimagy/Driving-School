@@ -14,7 +14,7 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="page_accueil.html">Accueil</a>
+        <a href="index.html">Accueil</a>
         <a href="page_connexion.html">Se connecter</a>
         <a href="page_inscription.html">S'inscrire</a>
         <a href="page_tarif.html">Tarifs</a>

@@ -1,0 +1,258 @@
+.modTable {
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    border-style: solid;
+    border-radius: 10px;
+    table-layout: auto;
+    padding: 2px;
+    padding-top: 10px;
+}
+
+.modTable td:hover {
+    overflow: unset;
+    text-overflow: unset;
+}
+
+.modTr:hover {
+    transition: 0.2s;
+}
+
+.modTr:hover td:not(.buttonSized) {
+    background-color: #4d4d4d;
+    transition: 0.3s;
+}
+
+.modTh{
+    text-decoration: underline;
+}
+
+.cadre{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006600;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.cadro{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: brown;
+}
+
+.info {
+    border-radius: 10px;
+    background-color: #ff751a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.info:hover {
+    background-color: #ffa366;
+    transition:0.5s;
+}
+
+.supprim {
+    border-radius: 10px;
+    background-color: #ab1f39;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.supprim:hover {
+    background-color: #f44336;
+    transition:0.5s;
+}
+
+.modifier {
+    border-radius: 10px;
+    background-color: #409944;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.modifier:hover {
+    background-color: #51c456;
+    transition:0.5s;
+}
+
+.message {
+    border-radius: 10px;
+    background-color: #2582e6;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.message:hover {
+    background-color: #519BEB;
+    transition:0.5s;
+}
+
+.payer {
+    border-radius: 10px;
+    background-color: #00CC00;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.payer:hover {
+    background-color: #00FF00;
+    transition:0.5s;
+}
+
+.histork{
+
+    border-radius: 10px;
+    background-color: #00CC00;
+    border: none;
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 450;
+    width: 35px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.histork:hover {
+    background-color: #00FF00;
+    transition:0.5s;
+}
+
+@media all and (max-width: 1850px){
+    .modRow {
+        font-size: 1vw;
+    }
+    .supprim, .modifier , .message, .payer, .info, .histork{
+        width: 2vw;
+        height: 2vw;
+    }
+    .la-user-times, .la-edit {
+        font-size: 1.5vw !important;
+    }
+}
+
+@media all and (max-width: 1550px){
+    .modRow {
+        font-size: 1.1vw;
+    }
+    .supprim, .modifier, .message, .payer, .info, .histork{
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+    .la-user-times, .la-edit {
+        font-size: 1.8vw !important;
+    }
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .supprim, .modifier, .message, .payer, .info, .histork{
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+    .la-user-times, .la-edit {
+        font-size: 1.8vw !important;
+    }
+    .modRow th, .modTr td{
+        font-size: 1.2vw;
+    }
+    .cadre{
+        width: 30px;
+        height: 30px;
+    }
+    .cadro{
+        width: 45px;
+        height: 45px;
+    }
+    h1{
+        font-size: 2vw;
+    }
+    input{
+        font-size: 0.8vw;
+    }
+}
+
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 481px to 767px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+}

@@ -1,0 +1,614 @@
+body{
+    margin:0;
+    padding: 0;
+	background-image: url(../img/pic_inscription.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-color: black;
+    background-size: 100% 100%;
+	font-family: "Roboto",sans-serif;
+}
+
+
+/*------------------------------- etoile + message requis -----------------------------------*/
+
+.stars{
+	color: #ab1f39;
+    position: relative;
+    display: inline-block;
+}
+
+.stars .champReq {
+    visibility: hidden;
+    width: 85px;;
+    background-color: #883939;
+    color: #fff;
+    text-align: center;
+    padding: 3px 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-color: #a95858;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.7em;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.stars:hover .champReq {
+    visibility: visible;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+#main{
+    margin-top: 7%;
+    margin-bottom: 4%;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#left, #right{
+	width: 30%;
+}
+
+#formulaire{
+    padding-bottom: 1%;
+    width: 40%;
+    height: 100%;
+	border-style: solid;
+	border-color: dimgray;
+    border-radius: 5px;
+	background-color: #2e2e2e;
+    color:#afafaf;
+    font-weight: bold;
+    font-size: 20px;
+	opacity: 1;
+}
+
+#title {
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"] {
+	/*border-width: 0px;
+	border-bottom-width: 1px;*/
+	padding: 7px;
+	opacity: 1;
+	font-weight: bold;
+    color:white;
+}
+
+input[type="text"]:focus, input[type="date"]:focus , input[type="tel"]:focus , input[type="email"]:focus , input[type="password"]:focus {
+	/*border-bottom-color: #75bd78;
+	/*border-bottom-width: 2.75px;*/
+}
+
+/* ------------------ boutton -------------------------------------*/
+.btValider {
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 130px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btValider span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btValider span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btValider:hover span {
+    padding-right: 25px;
+}
+
+.btValider:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btEffacer {
+    border-radius: 4px;
+    /*background-color: #f44336;*/
+    background-color: #ab1f39;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 130px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+.btEffacer:hover {
+    background-color: #f44336;
+    transition:0.5s;
+}
+/* ------------------------------------------------------------------------------------------*/
+
+.fixed-size {
+    width: 70%
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #91d994;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #4CAF50;
+    transition: 0.6s;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+#err_prenom, #err_nom, #err_naiss, #err_ville, #err_phone, #err_mail, #err_pw, #err_cpw, #err_submit {
+	color: #ab1f39;
+    font-size: 11px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+        
+}
+
+input:focus {
+    color:white;
+    transition: all 0.5s;
+}
+
+select {
+    padding: 7px;
+    color:white;
+    background-color: #1e1e1e;
+    border-color:black;
+    border-width: 2px;
+    width: 90%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+option{
+    color:white;
+    background-color: #1e1e1e;
+}
+
+input{
+    width: 84%;
+    background-color: #1e1e1e;
+    border-color:black;
+    transition: all 0.5s;
+}
+
+input[type="passowrd"]{
+    width: 30%; 
+    
+}
+
+.center-cell{
+    text-align: center;
+}
+
+.center-cell > input{
+    width: 35%
+}
+
+progress{
+    border-radius: 8px;
+    transition-delay: width 1s;
+}
+progress::-webkit-progress-bar {
+  /* style rules */
+    background-color: #cccccc;
+    transition-delay: width 1s;
+    border-radius: 8px;
+    
+}
+progress::-webkit-progress-value {
+  /* style rules */
+    transition-delay: width 1s;
+    border-radius: 8px;
+}
+
+progress[value]::-webkit-progress-value {
+    transition: width 0.5s;
+    background: linear-gradient(122deg, rgba(57,94,58,1) 0%, rgba(117,189,120,1) 100%);
+}
+
+.table{ 
+    border-collapse:separate; 
+    border-spacing: 3px 7px;
+    table-layout: fixed;
+}
+
+.table td{
+    padding-left: 5%;
+}
+
+/* ------------------------------------------------------------------------------------------*/
+.erreurChamp {
+    background-color: #883939;
+    border-color: #a95858;
+    border-style: solid;
+    transition: all 0.5s;
+    transition: 0.5s;
+}
+.correcte {
+    transition: all 0.2s;
+    transition: 0.2s;
+    background-color: #768d3d;
+    border-color: #8ca54d;
+    border-style: solid;
+}
+/* ------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------*/
+@media all and (max-width: 1600px){
+    #main{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    #formulaire {
+        width: 40%;
+    }
+    #left, #right{
+        width:30%;
+    }
+    #title{
+        font-size: 1.3vw;
+    }
+    .table{ 
+        border-spacing: 2px 4px;
+    }
+    .container{
+        font-size: 1.1vw;
+    }
+    .btValider {
+        font-size: 17px;
+        font-weight: 450;
+        width: 115px;
+        height: 30px;
+    }
+    .btEffacer {
+        font-size: 17px;
+        font-weight: 450;
+        width: 115px;
+        height: 30px;
+    }
+    label{
+        font-size: 1.2vw;
+    }
+    input{
+        height: 12px;
+        width: 82%;
+    }
+    select{
+        height: 34px;
+        width: 89%;
+        font-size: 0.8vw;
+    }
+    progress{
+        height: 15px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    #main{
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+    #formulaire {
+        width: 45%;
+    }
+    #left, #right{
+        width:30%;
+    }
+    #title{
+        font-size: 1.1vw;
+    }
+    .table{ 
+        border-spacing: 2px 3px;
+    }
+    .container{
+        font-size: 1vw;
+    }
+    .checkmark{
+        height: 15px;
+        width: 15px;
+    }
+    /* Style the indicator (dot/circle) */
+    .container .checkmark:after {
+        top: 5px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+    }
+    .btValider {
+        font-size: 15px;
+        font-weight: 450;
+        width: 100px;
+        height: 25px;
+    }
+    .btEffacer {
+        font-size: 15px;
+        font-weight: 450;
+        width: 100px;
+        height: 25px;
+    }
+    label{
+        font-size: 1vw;
+    }
+    input{
+        height: 9px;
+        width: 82%;
+    }
+    select{
+        height: 30px;
+        width: 89%;
+        font-size: 0.8vw;
+    }
+    progress{
+        height: 10px;
+    }
+}
+
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #main{
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+    #formulaire {
+        width: 50%;
+    }
+    .btValider {
+        font-size: 15px;
+        width: 97px;
+        height: 25px;
+    }
+    .btEffacer {
+        font-size: 15px;
+        width: 97px;
+        height: 25px;
+    }
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #main{
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    #formulaire {
+        width: 70%;
+    }
+    .table{ 
+        border-spacing: 1px 1px;
+    }
+    .container{
+        font-size: 1.2vw;
+    }
+    .btValider {
+        font-size: 13px;
+        width: 92px;
+        height: 25px;
+    }
+    .btEffacer {
+        font-size: 13px;
+        width: 92px;
+        height: 25px;
+    }
+    label{
+        font-size: 1.4vw;
+    }
+    input{
+        height: 9px;
+        width: 80%;
+    }
+    select{
+        height: 30px;
+        width: 87%;
+        font-size: 1vw;
+    }
+    progress{
+        height: 10px;
+    }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 481px to 767px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+    #main{
+        margin-top: 8%;
+        margin-bottom: 1%;
+    }
+    #formulaire {
+        width: 100%;
+    }
+    #title{
+        font-size: 1.8vw;
+    }
+    #left, #right{
+        width: 13%;
+    }
+    .table{ 
+        border-spacing: 1px 1px;
+    }
+    .btValider {
+        font-size: 14px;
+        width: 92px;
+        height: 25px;
+    }
+    .btEffacer {
+        font-size: 14px;
+        width: 92px;
+        height: 25px;
+    }
+    label{
+        font-size: 2vw;
+    }
+    input{
+        height: 9px;
+        width: 80%;
+    }
+    select{
+        height: 30px;
+        width: 87%;
+        font-size: 1.4vw;
+    }
+    progress{
+        height: 10px;
+    }
+    .container{
+        font-size: 1.5vw;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+    #main{
+        margin-top: 11%;
+        margin-bottom: 1%;
+    }
+    #formulaire {
+        width: 96%;
+    }
+    #title{
+        font-size: 3vw;
+    }
+    #left, #right{
+        width: 2%;
+    }
+    .table{ 
+        border-spacing: 1px 1px;
+    }
+    .btValider {
+        font-size: 12px;
+        width: 75px;
+        height: 25px;
+    }
+    .btEffacer {
+        font-size: 12px;
+        width: 75px;
+        height: 25px;
+    }
+    .container{
+        font-size: 2.4vw;
+    }
+    label{
+        font-size: 2.8vw;
+    }
+    input{
+        height: 9px;
+        width: 79%;
+    }
+    select{
+        height: 30px;
+        width: 88%;
+        font-size: 2.1vw;
+    }
+    progress{
+        height: 10px;
+    }
+    
+}

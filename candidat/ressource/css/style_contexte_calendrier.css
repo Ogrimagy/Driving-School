@@ -1,0 +1,143 @@
+#event_form {
+  font-weight: bold;
+}
+#footer-content {
+  font-weight: 300;
+}
+
+.tdInf {
+  text-align: left;
+}
+
+td {
+  margin-top: auto;
+}
+
+input {
+  width: 92%;
+}
+
+select {
+  width: 94%;
+}
+
+
+.btEvent {
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 130px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btEvent span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btEvent span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btEvent:hover span {
+    padding-right: 25px;
+}
+
+.btEvent:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btModEv {
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 250px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btModEv span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btModEv span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btModEv:hover span {
+    padding-right: 25px;
+}
+
+.btModEv:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btSupEv {
+    border-radius: 4px;
+    /*background-color: #f44336;*/
+    background-color: #ab1f39;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 450;
+    width: 250px;
+    height: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+.btSupEv:hover {
+    background-color: #f44336;
+    transition:0.5s;
+}
+
+.alert {
+	border: solid;
+	border-radius: 10px;
+	width: 700px;
+	margin: auto;
+	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.alert-danger {
+	background-color: #d97373;
+	border-color: #cf4242;
+}
+
+.alert-success {
+	background-color: #75BD78;
+	border-color: #4CAF50;
+}

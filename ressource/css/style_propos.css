@@ -1,0 +1,421 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the container/contact section */
+.container {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9) ),url("../img/propos.jpg");
+    background-color: rgb(5,180,230);
+    color: white;
+}
+
+/*------------------------------------------- DIV N 1 ---------------------------------------------*/
+.toplevel{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.title{
+    font-size: 3vw;
+    color: rgb(220,220,220);
+    text-shadow: 0px 4px 4px black;
+}
+
+.titletxt{
+    font-size: 1.5vw;
+    text-shadow: 0px 4px 4px black;
+}
+
+.toplevel h2{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    width: 350px;
+    outline: none;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/*----------------------------------------- FIN DIV N 1 --------------------------------------------*/
+
+/*------------------------------------------- DIV N 2 ----------------------------------------------*/
+.black{
+    text-align: justify;
+    line-height: 2;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-family:  URW Chancery L, cursive;
+}
+
+.color{
+    background-color: black;
+    padding: 3px;
+}
+
+.paragraph{
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: black;
+    opacity: 0.85;
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+}
+/*----------------------------------------- FIN DIV N 2 --------------------------------------------*/
+
+/*------------------------------------------- DIV N 3 ----------------------------------------------*/
+
+.readmore {
+    font-family: Montserrat, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+    background-image: linear-gradient( rgba(0, 100, 60, 0.1), rgba(12, 38, 12, 0.5) );
+}
+
+.readmorePara {
+    font-size: 1vw;
+}
+/*----------------------------------------- FIN DIV N 3 --------------------------------------------*/
+
+/*------------------------------------------- DIV N 4 ----------------------------------------------*/
+.boldedgreen{
+    color: #4CAF50;
+}
+
+.avis{
+    padding-bottom: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+    text-align: center;
+}
+
+.eleve{
+    color: white;
+}
+
+.x-large-font {
+    font-size: 1.6vw;
+}
+
+.large-font {
+    font-size: 1.4vw;
+}
+
+.row {
+    display: table;
+    width: 100%; 
+    table-layout: fixed;
+}
+
+.column {
+    background-image: linear-gradient( rgba(40, 200, 80, 0.1), rgba(40, 200, 80, 0.3) );
+    font-size: 1vw;
+    float: left;
+    width: 31%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: table-cell;
+    text-align: justify;
+    border: ridge white 2px;
+    border-radius: 10px;
+    margin: 5px;
+    height: 230px;
+}
+.comment {
+    margin-top: -7px;
+}
+
+.column h4{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+/*----------------------------------------- FIN DIV N 4 --------------------------------------------*/
+
+
+/* Device = Desktops, Screen = 1281px to higher resolution desktops*/
+@media (min-width: 1367px) {
+
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .toplevel{
+        padding-top: 6%;
+        padding-bottom: 2%; 
+    }
+    .title, .readmore h1{
+        font-size: 2.5vw;
+    }
+    .titletxt{
+        font-size: 1.4vw;
+    }
+    .button{
+        font-size: 1vw;
+        width: 250px;   
+    }
+    .paragraph, .readmorePara{
+        font-size: 1.1vw;
+    }
+    .column{
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 200px;
+    }
+    .comment{
+        margin-top: 0px;
+    }
+    .x-large-font{
+        font-size: 1.5vw;
+    }
+    .large-font{
+        font-size: 1.3vw;
+    }
+    .column p, .column h4{
+        font-size: 1vw;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .toplevel{
+        padding-top: 6%;
+        padding-bottom: 2%; 
+    }
+    .title, .readmore h1{
+        font-size: 2.3vw;
+    }
+    .titletxt{
+        font-size: 1.3vw;
+    }
+    .button{
+        font-size: 1vw;
+        width: 240px;   
+    }
+    .paragraph, .readmorePara{
+        font-size: 1.1vw;
+    }
+    .column{
+        padding-left: 13px;
+        padding-right: 13px;
+        height: 200px;
+    }
+    .x-large-font{
+        font-size: 1.5vw;
+    }
+    .large-font{
+        font-size: 1.3vw;
+    }
+    .comment{
+        margin-top: 0px;
+    }
+    .column p, .column h4{
+        font-size: 1vw;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 481px to 767px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .toplevel{
+        padding-top: 7%;
+        padding-bottom: 3%; 
+    }
+    .title, .readmore h1{
+        font-size: 2.2vw;
+    }
+    .titletxt{
+        font-size: 1.2vw;
+    }
+    .button{
+        font-size: 0.9vw;
+        width: 210px;   
+    }
+    .paragraph, .readmorePara{
+        font-size: 1.1vw;
+    }
+    .column{
+        padding-left: 9px;
+        padding-right: 9px;
+        height: 150px;
+    }
+    .x-large-font{
+        font-size: 1.5vw;
+    }
+    .large-font{
+        font-size: 1.3vw;
+    }
+    .comment{
+        margin-top: 0px;
+    }
+    .column p, .column h4{
+        font-size: 1vw;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .toplevel{
+        padding-top: 10%;
+        padding-bottom: 4%; 
+    }
+    .title, .readmore h1{
+        font-size: 3.3vw;
+    }
+    .titletxt{
+        font-size: 2vw;
+    }
+    .button{
+        font-size: 1.5vw;
+        width: 210px;   
+    }
+    .paragraph, .readmorePara{
+        font-size: 1.4vw;
+    }
+    .column{
+        width: 100%;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: auto;
+    }
+    .row{
+        width: 80%;
+    }
+    .x-large-font{
+        font-size: 2vw;
+    }
+    .large-font{
+        font-size: 1.8vw;
+    }
+    .comment{
+        margin-top: 0px;
+    }
+    .column p, .column h4{
+        font-size: 1.2vw;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .toplevel{
+        padding-top: 28%;
+        padding-bottom: 18%; 
+    }
+    .title, .readmore h1{
+        font-size: 4vw;
+    }
+    .titletxt{
+        font-size: 2.6vw;
+    }
+    .button{
+        font-size: 2.3vw;
+        width: 155px; 
+        padding: 10px 14px;  
+    }
+    .paragraph, .readmorePara{
+        font-size: 2.5vw;
+        font-weight: 900;
+        line-height: 15px;
+    }
+    .column{
+        width: 100%;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+    }
+    .row{
+        width: 95%;
+    }
+    .readmore{
+        margin-bottom: 12%;
+    }
+    .x-large-font{
+        font-size: 2.9vw;
+    }
+    .large-font{
+        font-size: 2.6vw;
+    }
+    .column p, .column h4{
+        font-size: 2.4vw;
+        font-weight: bolder;
+    }
+    .comment{
+        margin-top: 0px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}

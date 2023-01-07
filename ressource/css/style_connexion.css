@@ -1,0 +1,428 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(../img/pic_connexion.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(../img/pic_connexion.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container{
+    padding-top: 9%;
+    padding-bottom: 14%;
+}
+
+.loginbox{
+    width: 320px;
+    padding: 450px;
+    background: rgba(51,51,51,.95);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.loginbox img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.loginbox h2{
+	margin: 0;
+	padding: 0 0 20px;
+	font-size: 22px;
+	color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: white;
+    text-align: left;
+}
+
+.loginbox input{
+	width: 100%;
+    margin-bottom: 20px;
+}
+
+#input2 {
+    margin-bottom: 2px; !important
+}
+
+.loginbox input[type="text"],input[type="password"]{
+	color: white;
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+    transition: all 0.5s;
+}
+
+.loginbox input[type="text"]:focus,input[type="password"]:focus{
+	border-bottom-color: #4CAF50;
+    transition: all 0.5s;
+}
+
+.loginbox input[type="submit"]{
+	border: none;
+	height: 40px;
+	color:white;
+	background: #75bd78;
+	font-size: 18px;
+	border-radius: 20px;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.loginbox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #4CAF50;
+    transition: all 0.5s;
+}
+
+.btConex {
+    border: none;
+	height: 40px;
+	color:white;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.la-eye, .la-eye-slash{
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+#afficher {
+	font-size: 14px;
+	line-height: 35px;
+	color: white;
+    padding: 5px;
+}
+
+#afficher:hover {
+	font-size: 14px;
+	line-height: 35px;
+	color: lightgray;
+    cursor: pointer;
+    text-align: left;
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+    padding: 0px;
+	color: darkgrey;
+}
+
+.loginbox a:hover{
+	color:red ;
+    text-decoration: underline;
+}
+
+p .invisible {
+    font-size: 900px;
+}
+
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0.3;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0.3;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0.3;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0.3;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0.3;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* Device = Desktops, Screen = 1281px to higher resolution desktops*/
+@media (min-width: 1367px) {
+
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .container{
+        padding-top: 6.4%;
+        padding-bottom: 6%;
+    }
+    .loginbox{
+        width: 270px;
+        padding: 15px 20px;
+    }
+    .loginbox img{
+        width: 100px;
+        border-radius: 50%;
+    }
+    .loginbox h2{
+        font-size: 1.6vw;
+    }
+    .loginbox p{
+        font-size: 1.1vw;
+    }
+    .loginbox input[type="text"],input[type="password"]{
+        height: 30px;
+        font-size: 1vw;
+    }
+    .la-eye, .la-eye-slash{
+        font-size: 0.9vw;
+    }
+    #afficher {
+        font-size: 0.8vw;
+    }
+
+    #afficher:hover {
+        font-size: 0.8vw;
+    }
+    .loginbox input[type="submit"]{
+        height: 30px;
+        font-size: 1vw;
+        border-radius: 20px;
+        width: 55%;
+    }
+    .loginbox a{
+        font-size: 0.8vw;
+    }
+}
+
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container{
+        padding-top: 6.4%;
+        padding-bottom: 6%;
+    }
+    .loginbox{
+        width: 270px;
+        padding: 15px 20px;
+    }
+    .loginbox img{
+        width: 100px;
+        border-radius: 50%;
+    }
+    .loginbox h2{
+        font-size: 1.6vw;
+    }
+    .loginbox p{
+        font-size: 1.1vw;
+    }
+    .loginbox input[type="text"],input[type="password"]{
+        height: 30px;
+        font-size: 1vw;
+    }
+    .la-eye, .la-eye-slash{
+        font-size: 0.9vw;
+    }
+    #afficher {
+        font-size: 0.8vw;
+    }
+
+    #afficher:hover {
+        font-size: 0.8vw;
+    }
+    .loginbox input[type="submit"]{
+        height: 30px;
+        font-size: 1vw;
+        border-radius: 20px;
+        width: 55%;
+    }
+    .loginbox a{
+        font-size: 0.8vw;
+    }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .container{
+        padding-top: 10%;
+        padding-bottom: 9%;
+    }
+    .loginbox{
+        width: 245px;
+        padding: 15px 20px;
+    }
+    .loginbox img{
+        width: 80px;
+        border-radius: 50%;
+    }
+    .loginbox h2{
+        font-size: 1.6vw;
+    }
+    .loginbox p{
+        font-size: 1.1vw;
+    }
+    .loginbox input[type="text"],input[type="password"]{
+        height: 30px;
+        font-size: 1vw;
+    }
+    .la-eye, .la-eye-slash{
+        font-size: 0.9vw;
+    }
+    #afficher {
+        font-size: 0.8vw;
+    }
+
+    #afficher:hover {
+        font-size: 0.8vw;
+    }
+    .loginbox input[type="submit"]{
+        height: 30px;
+        font-size: 1vw;
+        border-radius: 20px;
+        width: 55%;
+    }
+    .loginbox a{
+        font-size: 0.8vw;
+    }
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container{
+        padding-top: 23%;
+        padding-bottom: 25%;
+    }
+    .loginbox{
+        width: 310px;
+        padding: 30px 25px;
+    }
+    .loginbox img{
+        width: 110px;
+        border-radius: 50%;
+    }
+    .loginbox h2{
+        font-size: 3.3vw;
+    }
+    .loginbox p{
+        font-size: 2.3vw;
+    }
+    .loginbox input[type="text"],input[type="password"]{
+        height: 30px;
+        font-size: 2vw;
+    }
+    .la-eye, .la-eye-slash{
+        font-size: 1.8vw;
+    }
+    #afficher {
+        font-size: 1.8vw;
+    }
+
+    #afficher:hover {
+        font-size: 1.8vw;
+    }
+    .loginbox input[type="submit"]{
+        height: 30px;
+        font-size: 2vw;
+        border-radius: 20px;
+        width: 55%;
+    }
+    .loginbox a{
+        font-size: 1.8vw;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+        padding-top: 29%;
+        padding-bottom: 30%;
+    }
+    .loginbox{
+        width: 260px;
+        padding: 15px 20px;
+    }
+    .loginbox img{
+        width: 90px;
+        border-radius: 50%;
+    }
+    .loginbox h2{
+        font-size: 4vw;
+    }
+    .loginbox p{
+        font-size: 3vw;
+    }
+    .loginbox input[type="text"],input[type="password"]{
+        height: 30px;
+        font-size: 2.8vw;
+    }
+    .la-eye, .la-eye-slash{
+        font-size: 2.3vw;
+    }
+    #afficher {
+        font-size: 2.3vw;
+    }
+
+    #afficher:hover {
+        font-size: 2.3vw;
+    }
+    .loginbox input[type="submit"]{
+        height: 30px;
+        font-size: 2.5vw;
+        border-radius: 20px;
+        width: 55%;
+    }
+    .loginbox a{
+        font-size: 2.3vw;
+    }
+}

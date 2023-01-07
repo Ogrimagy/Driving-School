@@ -1,0 +1,123 @@
+
+
+#listecandidat,#candidatpret{
+    font-family:Calibri;
+    width:70%;
+    background-color: #2e2e2e;
+    color:#afafaf;
+    font-size: 20px;
+    margin: 100px calc(11% + 200px) auto calc(11% + 200px);
+    margin-bottom: 200px;
+    transition: all 0.8s ease-out;
+    border-style: solid;
+    border-color: dimgray;
+    border-radius: 5px;
+    padding: 15px !important;
+}
+
+
+
+#listecandidat,h1{
+    text-align: center;
+    color: white;
+}
+#candidatpret,h1{
+     text-align: center;
+    color: white;
+}
+.modTable {
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    border-style: solid;
+    border-radius: 10px;
+    table-layout: auto;
+    margin-bottom: 50px;
+    padding: 2px;
+    padding-top: 10px;
+
+}
+.sub_liste{
+    background-color: #2e2e2e;
+    text-align: center;
+    font-family:Calibri;
+    font-size: 20px;
+    color: white;
+    width:70%;
+    padding: 15px !important;
+    border-style: solid;
+    border-color: dimgray;
+    border-radius: 5px;
+    margin: 100px calc(11% + 200px) auto calc(11% + 200px);
+    margin-bottom: 200px;
+    display: none;
+    transition: all 0.8s ease-out;
+}
+.modTable td:hover {
+    overflow: unset;
+    text-overflow: unset;
+}
+.modRow {
+    font-size: 0.8vw;
+}
+
+.div7 {
+    color:white;
+}
+
+.modTr:hover {
+    transition: 0.2s;
+}
+
+.modTr:hover td:not(.buttonSized) {
+    background-color: #4d4d4d;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+@media all and (max-width: 1850px){
+    .modRow {
+        font-size: 1vw;
+    }
+   #test,#modiier{
+        font-size: 1.4vw;
+    }
+   
+}
+
+
+@media all and (max-width: 1550px){
+    .modRow {
+        font-size: 1.1vw;
+    }
+    #test,#modiier{
+        font-size: 1.6vw;
+    }
+}
+
+
+
+
+
+
+@media all and (max-width: 1000px){
+    .modRow {
+        font-size: 1.3vw;
+    }
+   #test,#modiier{
+        font-size: 1.8vw;
+    }
+    .supprim, .modifier {
+        width: 2.6vw;
+        height: 2.6vw;
+       
+    }
+     #test,#modiier{
+        width:80%;
+    }
+}

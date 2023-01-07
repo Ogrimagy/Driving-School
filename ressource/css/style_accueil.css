@@ -1,0 +1,402 @@
+body, html {
+    height: 100%;
+    transition: height 999999s;
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/*------------------------------------------ DIV N 1 --------------------------------------------*/
+.parallax {
+	background-image: url("../img/pic_acceuil.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.introduction {
+    padding-top: 15%;
+    padding-bottom: 20%;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+}
+
+.title{
+    color: white;
+    margin: 10px;
+}
+
+.xlarge-font {
+    font-size: 3.5vw;
+    color:white;
+}
+
+.large-font {
+    font-size: 2.2vw;
+    color: white;  
+}
+
+.buttonintro {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    width: 250px;
+    outline: none;
+}
+
+.buttonintro span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonintro span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonintro:hover span {
+    padding-right: 25px;
+}
+
+.buttonintro:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/*---------------------------------------- FIN DIV N 1 ------------------------------------------*/
+
+/*----------------------------------------- Other DIV -------------------------------------------*/
+.smallhr {
+    width: 99.50%;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    padding:0.15%;
+}
+
+.container {
+    padding: 64px;
+}
+
+.blackbg {
+    color: white;
+}
+
+.graybg {
+    color:white;
+}
+
+.perk1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(../img/perk1.jpg);  
+}
+
+.perk2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(../img/perk2.jpg);  
+}
+
+.perk3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(../img/perk3.jpg);  
+}
+
+.perk4 {
+   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ), url(../img/perk4.png);
+}
+
+.parallaxV2 {
+    /* The image used */
+    height: 75%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.las {
+    font-size: 30vmin;
+}
+
+.row: after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.column-66 {
+	float: left;
+	width: 66.66666%;  
+}
+
+.column-33 {
+	float: left;
+	width: 33.33333%;
+	padding: 20px;
+}
+
+.titre{
+    color:MediumSeaGreen;
+}
+
+.titletxt {
+    font-size: 1.8vw;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 11px 25px;
+    font-size: 1vw;
+    cursor: pointer;
+    background-color: #4CAF50;
+    outline: none;
+    border: 1px solid #4CAF50;
+    transition: 0.5s;
+}
+
+.button:hover {
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.perk4 {
+    background-size: 80%;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 50%;
+}
+
+* {
+    box-sizing:border-box;
+}
+/*--------------------------------------- FIN Other DIV -------------------------------------------*/
+
+/* Device = Desktops, Screen = 1281px to higher resolution desktops*/
+@media (min-width: 1367px) {
+
+}
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .introduction {
+        padding-top: 14%;
+        padding-bottom: 14%;
+    }
+    .xlarge-font {
+        font-size: 2.8vw;
+    }
+    .large-font {
+        font-size: 1.6vw;
+    }
+    .buttonintro {
+        font-size: 1.1vw;
+        width: 180px;
+        padding: 
+    }
+    .las {
+        font-size: 28vmin;
+    }
+    .titletxt {
+        font-size: 1.5vw;
+    }
+    p{
+        font-size: 1.1vw;
+    }
+    .button{
+        font-size: 0.9vw;
+    }
+}
+
+
+/* Device = Laptops, Desktops. Screen = 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .introduction {
+        padding-top: 16%;
+        padding-bottom: 16%;
+    }
+    .xlarge-font {
+        font-size: 3.2vw;
+    }
+    .large-font {
+        font-size: 2vw;
+    }
+    .buttonintro {
+        font-size: 1.1vw;
+        width: 150px;
+        padding: 10px 24px;
+    }
+    .las {
+        font-size: 28vmin;
+    }
+    .titletxt {
+        font-size: 1.5vw;
+    }
+    p{
+        font-size: 1.1vw;
+    }
+    .button{
+        font-size: 0.9vw;
+    }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape). Screen = 481px to 767px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .introduction {
+        padding-top: 17%;
+        padding-bottom: 17%;
+    }
+    .xlarge-font {
+        font-size: 3.8vw;
+    }
+    .large-font {
+        font-size: 2.2vw;
+    }
+    .las{
+        font-size: 15vw;
+    }
+    .buttonintro {
+        font-size: 1.4vw;
+        width: 160px;
+    }
+    .titletxt {
+        font-size: 2vw;
+    }
+    p{
+        font-size: 1.5vw;
+    }
+    .button{
+        font-size: 1.2vw;
+    }
+    
+}
+
+/*  Device = Tablets, Ipads (portrait). Screen = 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .introduction {
+        padding-top: 17%;
+        padding-bottom: 17%;
+    }
+    .xlarge-font {
+        font-size: 3.8vw;
+    }
+    .large-font {
+        font-size: 2.2vw;
+    }
+    .las{
+        font-size: 15vw;
+    }
+    .buttonintro {
+        font-size: 1.4vw;
+        width: 160px;
+    }
+    .titletxt {
+        font-size: 2vw;
+    }
+    p{
+        font-size: 1.5vw;
+    }
+    .button{
+        font-size: 1.2vw;
+    }
+    
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = B/w 320px to 479px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .column-33, .column-66{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+    .introduction{
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+    .xlarge-font {
+        font-size: 5vw;
+    }
+    .large-font {
+        font-size: 2.8vw;
+    }
+    .las{
+        font-size: 18vw;
+    }
+    .buttonintro {
+        font-size: 2.1vw;
+        width: 140px;
+    }
+    .titletxt {
+        font-size: 3vw;
+    }
+    p{
+        font-size: 2.2vw;
+    }
+    .button{
+        font-size: 1.6vw;
+    }
+    .container{
+        padding: 64px;
+    }
+    .parallax{
+        background-attachment: inherit;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait). Screen = 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .column-33, .column-66{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+    .column-33, .column-66{
+        width: 100%;
+    }
+    .introduction{
+        padding-top: 45%;
+        padding-bottom: 45%;
+    }
+    .xlarge-font {
+        font-size: 6.2vw;
+    }
+    .large-font {
+        font-size: 3.2vw;
+    }
+    .las{
+        font-size: 28vw;
+    }
+    .buttonintro {
+        font-size: 2.7vw;
+        width: 140px;
+    }
+    .titletxt {
+        font-size: 3.5vw;
+    }
+    p{
+        font-size: 2.8vw;
+    }
+    .button{
+        font-size: 2.2vw;
+    }
+    .parallax{
+        background-attachment: inherit;
+    }
+}
